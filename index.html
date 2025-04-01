@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+      <div class="nav-heading clickable">
+        <img class="dashboard-icon" src="./assets/icons/dashboard.svg" alt="Dashboard icon">Dashboard
+      </div>
+
+      <div class="nav-section">
+        <ul class="nav-list sidebar-list-style">
+          <li><img class="sidebar-icon" src="./assets/icons/home.svg" alt="Home icon">Home</li>
+          <li><img class="sidebar-icon" src="./assets/icons/profile.svg" alt="Profile icon">Profile</li>
+          <li><img class="sidebar-icon" src="./assets/icons/messages.svg" alt="Messages icon">Messages</li>
+          <li><img class="sidebar-icon" src="./assets/icons/history.svg" alt="History icon">History</li>
+          <li><img class="sidebar-icon" src="./assets/icons/tasks.svg" alt="Tasks icon">Tasks</li>
+          <li><img class="sidebar-icon" src="./assets/icons/communities.svg" alt="Communities icon">Communities</li>
+        </ul>
+      </div>
+
+      <div class="settings-section">
+        <ul class="settings-list sidebar-list-style">
+          <li><img class="sidebar-icon" src="./assets/icons/settings.svg" alt="Settings icon">Settings</li>
+          <li><img class="sidebar-icon" src="./assets/icons/support.svg" alt="Support icon">Support</li>
+          <li><img class="sidebar-icon" src="./assets/icons/privacy.svg" alt="Privacy icon">Privacy</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Header Start -->
+    <div class="header">
+      <div class="header-first-row">
+        <div class="search-bar">
+          <button type="submit" class="search-icon clickable" form="search-form">
+            <img src="./assets/icons/search.svg" alt="Search icon">
+          </button>
+          <form action="#" id="search-form" method="get">
+            <input
+              class="search-input"
+              type="search"
+              name="search" 
+              id="search"
+            />
+          </form>
+        </div>
+        <div class="profile-section">
+          <div class="clickable">
+            <img class="notifications-icon" src="./assets/icons/notifications.svg" alt="Notifications icon">
+          </div>
+          <a href="#" class="profile-display clickable">
+            <img 
+              class="avatar-small" 
+              src="./assets/icons/avatar-morgan.svg" 
+              alt="Avatar"
+            />
+            <span>Morgan Oakley</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="header-second-row">
+        <div class="profile-display">
+          <img 
+              class="avatar-large" 
+              src="./assets/icons/avatar-morgan.svg" 
+              alt="Avatar"
+          />
+          <div class="name-greeting">
+            <div class="greeting">Hi there,</div>
+            <div class="name">Morgan Oakley (@morgan)</div>
+          </div>
+        </div>
+        <div class="header-button-section">
+          <button class="header-button">New</button>
+          <button class="header-button">Upload</button>
+          <button class="header-button">Share</button>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+    
+    <!-- Main Start -->
+    <div class="main">
+
+      <!-- Projects Start -->
+      <div class="projects">
+        <div class="projects-section-heading">Your Projects</div>
+
+        <div class="projects-container">
+
+          <div class="project-card">
+            <div class="project-info">
+              <div class="project-name">Super Cool Project</div>
+              <div class="project-description">
+                pariatur velit anim sint quis ipsum eu sint dolor aliqua culpa cillum qui eu nisi fugiat elit officia tempor culpa ut est labore officia non
+              </div>
+            </div>
+            <div class="project-interaction-container">
+              <ul class="project-interaction">
+                <li class="interaction-icon">
+                  <img src="./assets/icons/star.svg" alt="Star icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/watch.svg" alt="Watch icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/fork.svg" alt="Fork icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-info">
+              <div class="project-name">Less Cool Project</div>
+              <div class="project-description">
+                est et laborum deserunt commodo esse id sunt excepteur tempor tempor ex tempor duis eu officia adipisicing non reprehenderit nisi amet sint excepteur exercitation veniam
+              </div>
+            </div>
+            <div class="project-interaction-container">
+              <ul class="project-name">
+                <li class="interaction-icon">
+                  <img src="./assets/icons/star.svg" alt="Star icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/watch.svg" alt="Watch icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/fork.svg" alt="Fork icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-info">
+              <div class="project-name">Impossible App</div>
+              <div class="project-description">
+                in lorem exercitation consectetur irure sunt ullamco aliqua non dolore veniam ad velit ipsum dolor enim irure dolor duis sint labore velit occaecat laboris dolor
+              </div>
+            </div>
+            <div class="project-interaction-container">
+              <ul class="project-interaction">
+                <li class="interaction-icon">
+                  <img src="./assets/icons/star.svg" alt="Star icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/watch.svg" alt="Watch icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/fork.svg" alt="Fork icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-info">
+              <div class="project-name">Easy Peasy App</div>
+              <div class="project-description">
+                proident elit proident officia non aliqua ex sint anim exercitation magna aute do nostrud sed labore commodo occaecat reprehenderit culpa nostrud fugiat elit aliqua commodo
+              </div>
+            </div>
+            <div class="project-interaction-container">
+              <ul class="project-interaction">
+                <li class="interaction-icon">
+                  <img src="./assets/icons/star.svg" alt="Star icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/watch.svg" alt="Watch icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/fork.svg" alt="Fork icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-info">
+              <div class="project-name">Ad Blocker</div>
+              <div class="project-description">
+                veniam ut enim non non commodo aliqua ea irure sunt ad sed qui enim amet aute laboris quis eu duis dolore consequat ex eu consequat
+              </div>
+            </div>
+            <div class="project-interaction-container">
+              <ul class="project-interaction">
+                <li class="interaction-icon">
+                  <img src="./assets/icons/star.svg" alt="Star icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/watch.svg" alt="Watch icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/fork.svg" alt="Fork icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-info">
+              <div class="project-name">Money Maker</div>
+              <div class="project-description">
+                amet mollit reprehenderit nulla ex ad aute amet et ipsum eu mollit ea magna ea commodo aliqua magna labore in magna pariatur cupidatat elit sit
+              </div>
+            </div>
+            <div class="project-interaction-container">
+              <ul class="project-interaction">
+                <li class="interaction-icon">
+                  <img src="./assets/icons/star.svg" alt="Star icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/watch.svg" alt="Watch icon">
+                </li>
+                <li class="interaction-icon">
+                  <img src="./assets/icons/fork.svg" alt="Fork icon">
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Projects End -->
+    
+      <!-- Announcements Start -->
+      <div class="announcements">
+        <div class="announcements-section-heading">Announcements</div>
+        <div class="announcements-container">
+          <div class="announcement-heading">Site Maintenance</div>
+          <div class="announcement-description">
+            laboris nisi ea duis cillum ipsum eiusmod magna id ullamco velit do officia incididunt in aliquip pariatur nulla proident culpa ut irure consectetur ullamco velit
+          </div>
+          <hr>
+          <div class="announcement-heading">Community Share Day</div>
+          <div class="announcement-description">
+            mollit cupidatat consectetur sit aliquip anim irure exercitation incididunt veniam exercitation dolor dolor incididunt cupidatat deserunt irure excepteur velit do veniam exercitation qui esse cillum
+          </div>
+          <hr>
+          <div class="announcement-heading">Updated Privacy Policy</div>
+          <div class="announcement-description">
+            cupidatat et mollit nostrud excepteur tempor eu esse aliqua ipsum duis ea consectetur in voluptate sit eu fugiat excepteur cupidatat non occaecat fugiat ut velit
+          </div>
+        </div>
+      </div>
+      <!-- Announcements End -->
+      
+      <!-- Trending Start -->
+      <div class="trending">
+        <div class="trending-heading">Trending</div>
+        <div class="trending-container">
+          <div class="trending-profile">
+            <img class="avatar-small" src="./assets/icons/avatar-tegan.svg" alt="Avatar">
+            <div class="trending-profile-info">
+              <div class="trending-username">@tegan</div>
+              <div class="trending-project">World Peace Builder</div>
+            </div>
+          </div>
+          <div class="trending-profile">
+            <img class="avatar-small" src="./assets/icons/avatar-morgan.svg" alt="Avatar">
+            <div class="trending-profile-info">
+              <div class="trending-username">@morgan</div>
+              <div class="trending-project">Super Cool Project</div>
+            </div>
+          </div>
+          <div class="trending-profile">
+            <img class="avatar-small" src="./assets/icons/avatar-kendall.svg" alt="Avatar">
+            <div class="trending-profile-info">
+              <div class="trending-username">@kandell</div>
+              <div class="trending-project">Life Changing App</div>
+            </div>
+          </div>
+          <div class="trending-profile">
+            <img class="avatar-small" src="./assets/icons/avatar-alex.svg" alt="Avatar">
+            <div class="trending-profile-info">
+              <div class="trending-username">@alex</div>
+              <div class="trending-project">No Traffic Maker</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Trending End -->
+    </div>
+    <!-- Main End -->
+  </div>
+</body>
+</html>
